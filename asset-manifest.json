@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/message-caller-app/static/css/main.769b86b8.css",
+    "main.js": "/message-caller-app/static/js/main.c6468113.js",
+    "static/js/787.7e95ccf7.chunk.js": "/message-caller-app/static/js/787.7e95ccf7.chunk.js",
+    "index.html": "/message-caller-app/index.html",
+    "main.769b86b8.css.map": "/message-caller-app/static/css/main.769b86b8.css.map",
+    "main.c6468113.js.map": "/message-caller-app/static/js/main.c6468113.js.map",
+    "787.7e95ccf7.chunk.js.map": "/message-caller-app/static/js/787.7e95ccf7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.769b86b8.css",
+    "static/js/main.c6468113.js"
+  ]
+}
