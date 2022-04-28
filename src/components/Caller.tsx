@@ -1,5 +1,4 @@
 import {InputNumber} from "./InputNumber";
-import {Button} from "./Button";
 import {HistoriNumber} from "./HistoriNumber";
 import {useState} from "react";
 import {v1} from "uuid";
@@ -17,7 +16,6 @@ export const Caller = () => {
         {nameErr: "1", activ: false, tittle: "поле не может быть пустым" },
         {nameErr: "2", activ: false, tittle: "не может содержать буквы" },
         {nameErr: "3", activ: false, tittle: "слишком короткий номер" },
-
     ])
 
     const addHistori = (phone: string) => {
@@ -25,7 +23,6 @@ export const Caller = () => {
         phone ?
         setHistori([{id: id, phone: phone, comment: ''}, ...histori])
         : setError([...error].map(t=> t.nameErr === '1' ? {...t, activ: true} : {...t}))
-
     }
 
     const remuvHistoriUnit = (id: string) => {
@@ -39,7 +36,6 @@ export const Caller = () => {
     const errorClean = () => {
         setError([...error].map(t=> t.activ ? {...t, activ: false} : {...t}))
     }
-
 
     return (
         <div className={s.wrapper}>

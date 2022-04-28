@@ -19,3 +19,9 @@
     font-weight: bold;
     font-size: 26px!important;
 }
+
+span {
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bolder;
+}

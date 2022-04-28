@@ -27,7 +27,10 @@ export const InputNumber = (props: InputNumberPropsType) => {
 
     return (
         <div className={s.wrapper}>
-            <input className={s.input} value={inputValue} type={"text"} onChange={(event)=>onChangeInputHandler(event.currentTarget.value)}/>
+            <div>
+                <span>+</span>
+                <input className={s.input} value={inputValue} type={"text"} onChange={(event)=>onChangeInputHandler(event.currentTarget.value)}/>
+            </div>
             <Button className={s.bnt} callback={inputClear} name={'очист.'}/>
             <Button className={s.bnt} callback={addButtonHandler} name={'Применить'}/>
         </div>
