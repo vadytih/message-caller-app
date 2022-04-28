@@ -1,3 +1,5 @@
+import s from "./Button.module.css"
+
 type ButtonPropsType = {
     name: string
     callback: ()=>void
@@ -11,6 +13,6 @@ export const Button = (props: ButtonPropsType) => {
     }
 
     return (
-        <button className={props.className ? props.className: ''} onClick={onClickHandler}>{props.name}</button>
+        <button className={ `${s.button} ${props.className ? props.className: ''}`}  onClick={onClickHandler}>{props.name}</button>
     )
 }
